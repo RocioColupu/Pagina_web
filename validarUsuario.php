@@ -2,7 +2,7 @@
 	// Iniciar sesion
 	session_start();
     if (isset($_SESSION['usuario'])){
-		echo '<script>window.location="menu.php"; </script>';
+		echo '<script>window.location="deportes.php"; </script>';
 	}
 	// si viene del iniciar.php
 	if(isset($_POST['login'])){

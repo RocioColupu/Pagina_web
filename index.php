@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form method="POST" action="validarUsuario.php">
+  <form method="post" action="validarUsuario.php">
     <div class="col-4 m-5 justify-content-center">
     <div class="login">
       <div class="image">
@@ -45,19 +45,6 @@
     </div>
 
   </form>
-
-
-
-
-
-
-  <!-- <div class="input-group mb-3">
-  <span class="input-group-text">@</span>
-  <div class="form-floating">
-    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-    <label for="floatingInputGroup1">Username</label>
-  </div>
-</div> -->
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
