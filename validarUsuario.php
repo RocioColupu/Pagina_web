@@ -1,38 +1,30 @@
 <?php
-	// Iniciar sesion
-	session_start();
-    if (isset($_SESSION['usuario'])){
-		echo '<script>window.location="deportes.php"; </script>';
+
+include ("conexion.php");
+
+if(isset($_POST['usuario']) && isset($_POST['password']) ) {
+	
+	function validate($data){
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
 	}
-	// si viene del iniciar.php
-	if(isset($_POST['login'])){
-		$entro=false;
-		$usuario=$_POST['usuario'];
-		$pw=$_POST['clave'];
-        // incluir archivo serv.php
-	    require_once('serv.php');
-		$registros = "SELECT usuario FROM usuario WHERE usuario ='$usuario' AND clave='$pw'";
-		// bucle
-		foreach($db->query($registros) as $fila) {
-            $entro = true;
-			// inicia sesion
-			session_start();
-			// sesion se llama con el usuario
-			$_SESSION["usuario"]=$fila['usuario'];			
-		}	
-		$db = null;
-		if ($entro){
-            // msj en javascript
-			echo '<script>alert("Usuario correcto"); </script>';
-			// ir al panel.php
-			echo '<script>window.location="../vista/panel.php"; </script>';	
-        }else{
-			// error
-			echo '<script>alert("Usuario incorrecto"); </script>';
-			// ir a iniciar.php
-			echo '<script>window.location="../vista/iniciar.php"; </script>';	
-		}
+
+	$usuario = validate($_POST['usuario']);
+	$clave = validate($_POST['password']);
+
+	if (empty($usuario)){
+		header("Location : index.php?error~ El usuario es requerido");
+
+	}elseif (empty($clave)){
+		header("Location : index.php?error~ El password es requerido");
+		exit();
 	}else{
-		echo '<script>window.location="../vista/iniciar.php"; </script>';
+		// $password = md5($password);
+
+		$sql="SELECT * FROM Usuarios WHERE Telefono = '$usuario' AND DNI='$password' ";
+		$result = mysqli_query($conexion , $sql);
+
 	}
-?>
+}
