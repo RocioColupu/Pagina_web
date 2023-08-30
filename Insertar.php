@@ -1,5 +1,5 @@
 <!-- Insertar Registros-->
-<?php 
+<?php
 if (isset($_POST['formInsertar'])){?>
     <div class="col-12 col-md-12"> 
 <form action="" method="POST">
