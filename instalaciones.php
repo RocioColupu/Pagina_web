@@ -67,16 +67,16 @@ INCLUDE ("conexion.php")
             padding: 1em;
         }
 
-        .cards-container {
+        .carousel-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh; 
+            height: 70vh; 
         }
 
-        .card {
-            width: 18rem;
-            margin: 0 20px; 
+        .carousel-item{
+            width: 800px; 
+            height: auto; 
         }
     </style>
     <nav class="main-nav">
@@ -98,52 +98,31 @@ INCLUDE ("conexion.php")
             </li>
         </ul>
     </nav>
-    <div class="cards-container">
-        <div class="card" style="width: 18rem;">
-            <img src="image/futbol.png" class="card-img-top" alt="futbol">
-                <div class="card-body">
-                    <h5 class="card-title">FUTBOL</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de futbol de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="image/cancha-futbol.png" class="d-block w-100" alt="cancha de futbol">
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="image/basket.png" class="card-img-top" alt="basket">
-                <div class="card-body">
-                    <h5 class="card-title">BASKET</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de basket de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+        <div class="carousel-item">
+        <img src="image/cancha-basket.png" class="d-block w-100" alt="cancha de basket">
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="image/voley.png" class="card-img-top" alt="voley">
-                <div class="card-body">
-                    <h5 class="card-title">VOLEY</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de voley de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+        <div class="carousel-item">
+        <img src="image/cancha-voley.png" class="d-block w-100" alt="cancha de voley">
+        </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ..
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

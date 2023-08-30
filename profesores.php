@@ -78,6 +78,7 @@ INCLUDE ("conexion.php")
             width: 18rem;
             margin: 0 20px; 
         }
+
     </style>
     <nav class="main-nav">
         <div id="toggle-menu" class="toggle-menu">
@@ -100,50 +101,23 @@ INCLUDE ("conexion.php")
     </nav>
     <div class="cards-container">
         <div class="card" style="width: 18rem;">
-            <img src="image/futbol.png" class="card-img-top" alt="futbol">
-                <div class="card-body">
-                    <h5 class="card-title">FUTBOL</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de futbol de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+            <img src="image/profesor-futbol.png" class="card-img-top" alt="profesor de futbol">
+            <div class="card-body">
+                <p class="card-text">cuto guadalupe nuestro reconocido ex jugador de la seleccion peruana de futbol te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+            </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="image/basket.png" class="card-img-top" alt="basket">
-                <div class="card-body">
-                    <h5 class="card-title">BASKET</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de basket de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+            <img src="image/profesor-basket.png" class="card-img-top" alt="profesor de basket">
+            <div class="card-body">
+                <p class="card-text">michale jordan reconocido ex jugador de la nba y varias veces campeon te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+            </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="image/voley.png" class="card-img-top" alt="voley">
-                <div class="card-body">
-                    <h5 class="card-title">VOLEY</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de voley de lima.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
-                </div>
+            <img src="image/profesor-voley.png" class="card-img-top" alt="profesora de voley">
+            <div class="card-body">
+                <p class="card-text">natalia malaga nuestra reconocido ex entrenadora de la seleccion  de voley te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+            </div>
         </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ..
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
   </body>
 </html>
