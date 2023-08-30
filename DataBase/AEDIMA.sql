@@ -1,72 +1,72 @@
-create database AEDIMA;
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 30-08-2023 a las 22:47:43
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.0.25
 
-create table Usuarios(
-    cod_usu int primary key,
-    Nombres varchar(50) not null,
-    Apellidos varchar(50) not null,
-	Fec_Nac date not null,
-    DNI int not null,
-    Direccion varchar(50) not null,
-    Telefono int not null,
-	id_deportes int not null
-    );
-	alter table Usuarios add foreign key (id_deportes) references Deportes(id_deportes)
-
-create table Administrador(
-    cod_admin int primary key,
-    Nombres varchar(50) not null,
-    Apellidos varchar(50) not null,
-    DNI int not null,
-    Lugar_Nac varchar(50) not null,
-    Fec_Nac date,
-    Direccion varchar(50) not null,
-    Telefono int not null,
-    cargo varchar(20) not null,
-	cod_usu int not null
-	);
-	alter table Administrador add foreign key(cod_usu) references Usuarios(cod_usu)
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
-create table Deportes(
-    id_deportes int primary key,
-    Nombre varchar(50) not null,
-    Descripcion varchar(75) not null,
-	id_ind int not null,
-	id_ins int not null
-    );
-	alter table Deportes add foreign key(id_ind) references Indumentaria(id_ind)
-	alter table Deportes add foreign key(id_ins) references Instalaciones(id_ins)
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
-create table Indumentaria(
-    id_ind int primary key,
-    color varchar(15) not null,
-    talla int not null,
-    categoria varchar(20) not null
-    );
+--
+-- Base de datos: `aedima`
+--
 
-create table Instalaciones(
-    id_ins int primary key,
-    Nombre varchar(50) not null,
-    Direccion varchar(50) not null
-    );
+-- --------------------------------------------------------
 
-create table Profesores(
-    id_prof int primary key,
-    Nombres varchar(50) not null,
-    Apellidos varchar(50) not null,
-    Deporte varchar(50) not null,
-    Descripcion varchar(50) not null,
-    Telefono int not null,
-	id_deportes int not null
-);
-	alter table Profesores add foreign key(id_deportes) references Deportes(id_deportes)
+--
+-- Estructura de tabla para la tabla `usuario`
+--
 
-create table Solicitud(
-	id_solicitud int primary key,
-	cod_usu int not null,
-	fecha date,
-	id_deporte int not null,
-);
+CREATE TABLE `usuario` (
+  `ID` int(5) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Apellido` varchar(50) NOT NULL,
+  `DNI` int(8) NOT NULL,
+  `Telefono` int(9) NOT NULL,
+  `User` varchar(25) NOT NULL,
+  `Clave` varchar(25) NOT NULL,
+  `FechaNac` date NOT NULL,
+  `Distrito` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-alter table Solicitud add foreign key (cod_usu) references Usuarios(cod_usu)
-alter table Solicitud add foreign key (id_deporte) references Deportes(id_deportes)
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`ID`, `Nombre`, `Apellido`, `DNI`, `Telefono`, `User`, `Clave`, `FechaNac`, `Distrito`) VALUES
+(1, 'Pedrito', 'Perez', 87654321, 987654321, 'peperez', '1234', '2000-01-01', 'Ventanilla');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
