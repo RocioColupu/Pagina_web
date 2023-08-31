@@ -15,7 +15,7 @@ if(mysqli_num_rows($validar_user) > 0){
 } else{
     echo '
     <script>
-        alert("Usuario no existe");
+        alert("Credenciales Incorrectas");
         window.location = "index.php"
     </script>
     ';

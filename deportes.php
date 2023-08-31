@@ -135,7 +135,7 @@ if (!isset($_SESSION['usuario'])) {
         </ul>
 
         <div class="salir">
-           <a href=""> <button type="button" class="btn btn-danger">Cerrar Sesion </button> </a>
+           <a href="cerrar_session.php"> <button type="button" class="btn btn-danger">Cerrar Sesion </button> </a>
         </div>
     </nav>
     <div class="cards-container">
