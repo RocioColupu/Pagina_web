@@ -6,7 +6,7 @@ $apellido = $_POST['apellido'];
 $dni = $_POST['dni'];
 $telefono = $_POST['telefono'];
 $usuario = $_POST['usuario'];
-$contraseña = $_POST['contraseña'];
+$contraseña = $_POST['contraseña']; 
 $fechanac = $_POST['fechanac'];
 $distrito = $_POST['distrito'];
 

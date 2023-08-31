@@ -47,7 +47,7 @@ include("conexion.php");
               $sql = "SELECT * FROM solicitud";
               $query = mysqli_query($conexion,$sql);
 
-              while($fila = mysqli_fetch_array($query)){
+              while($fila = mysqli_fetch_array($query)){ 
               ?>
                 <tr>
                   <th scope="row"><?php echo $fila['idSolicitud'] ?></th>

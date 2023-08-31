@@ -1,6 +1,6 @@
 <?php
     include("conexion.php");
-    $id = $_REQUEST['Id'];
+    $id = $_REQUEST['Id']; 
 
     $sql = "SELECT * FROM solicitud WHERE idSolicitud = '$id'";
     $query = mysqli_query($conexion, $sql);

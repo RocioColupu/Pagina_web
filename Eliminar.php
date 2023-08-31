@@ -8,4 +8,4 @@ echo "<div class='content alert alert-primary'>";
 if($query){
     header('location:Crud.php');
 }
-?>
+?> 

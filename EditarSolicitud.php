@@ -8,7 +8,7 @@ $telefono = $_POST['telefono'];
 $dni = $_POST['dni'];
 
 $sql = "UPDATE solicitud SET nombreUser='$nombre_user', Deporte='$deporte',Telefono='$telefono',DNI='$dni' WHERE idSolicitud='$Id'";
-
+ 
 $query = mysqli_query($conexion,$sql); 
 
 if($query===TRUE){

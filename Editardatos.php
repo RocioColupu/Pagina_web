@@ -2,7 +2,7 @@
     include("conexion.php");
     $id = $_REQUEST['Id'];
 
-    $sql = "SELECT * FROM usuario WHERE ID = '$id'";
+    $sql = "SELECT * FROM usuario WHERE ID = '$id'"; 
     $query = mysqli_query($conexion, $sql);
     $fila = mysqli_fetch_array($query);
 ?>

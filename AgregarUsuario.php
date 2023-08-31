@@ -36,7 +36,7 @@
         <div class="mb-3">
           <input type="text" class="form-control" placeholder="Distrito" name="distrito" >
         </div>
-        <div class="container text-center">
+        <div class="container text-center"> 
           <button type="submit" class="btn btn-primary">Agregar usuario </button>
           <a href="Crud.php" class="btn btn-dark">Regresar</a>
         </div>
