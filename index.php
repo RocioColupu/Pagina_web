@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -15,7 +22,7 @@
 <body>
 
   <!-- FORMULARIO DE INICIO DE SESION -->
-  <form method="POST" action="validar.php">
+  <form action="validar.php" method="POST" >
     <div class="col-4 m-5 justify-content-center">
       <div class="login">
         <div class="image">
@@ -44,7 +51,7 @@
         </div>
       </div>
       <div class="botones">
-        <button type="submit" class="btn btn-primary btn-lg" name="login"> Iniciar sesion </button>
+        <button type="submit" class="btn btn-primary btn-lg"> Iniciar sesion </button>
         <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrarse</button>
 
       </div>
@@ -61,14 +68,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form method="POST" action="validar.php">
+          <form action="regSolicitud.php" method="POST">
             <div class="justify-content-center">
               <div class="login">
                 <img src="image/iconprincipal.png">
               </div>
             </div>
-
-
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
               <div class="form-floating">
@@ -127,13 +132,10 @@
             </div>
 
 
+
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
-
+            <button type="submit" class="btn btn-primary">Registrarse </button>
             </div>
-
-
-
         </div>
         </form>
       </div>

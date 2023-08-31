@@ -1,60 +1,98 @@
 <?php
-INCLUDE ("conexion.php")
+include("conexion.php");
+
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    echo '
+    <script>
+        alert("Debes iniciar session");
+        window.location = "index.php";
+    </script>
+    ';
+    session_destroy();
+    die();
+}
+
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aedima</title>
+    <title>Aedima</title>
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="">   
+    <link rel="stylesheet" href="">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
+</head>
+
+<body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
         body {
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             background-color: #D9D9D9;
         }
 
-        img{
+        img {
             max-width: 100%;
         }
 
-        .toggle-menu{
-            position: absolute;
-            top: 4px;
-            right: 1.5rem;
-            width: 60px;
-        }
-
-        .main-menu_link{
-            color: white;
-            padding: 5px 10px;
-            text-decoration: none;
-            background-color: #769ABB;
-            border-radius: 10px;
-        }
-
-        .main-menu_link:hover{
-            color: black;
-            padding: 5px 10px;
-            text-decoration: none;
-            background-color: white;
-            border-radius: 10px;
-        }
-
-        .main-menu{
-            list-style: none;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-left: 0;
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        nav {
+            height: 120px;
             background-color: #389B95;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .toggle-menu {
+            left: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 120px;
+        }
+
+        .main-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 80px;
+            font-size: 20px;
+            width: 50%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .main-menu_item{
+            text-align: center;
+            height: 20px;
+            width: 25%;
+            justify-content: center;
+        }
+
+        .salir {
+            right: right;
+        }
+
+        .main-menu_link {
+            color: white;
+            text-decoration: none; 
+        }
+
+        .main-menu_link:hover {
+            color: black;
+            text-decoration: none;
+            padding: 20px 10px;
+            border-radius: 15px;
+            background-color: #5ba39f;
         }
 
         @media screen and (min-width: 768px) {
@@ -99,6 +137,9 @@ INCLUDE ("conexion.php")
                 <a href="http://localhost/Pagina_web/instalaciones.php" class="main-menu_link">INSTALACIONES</a>
             </li>
         </ul>
+        <div class="salir">
+            <button type="button" class="btn btn-danger">Cerrar Sesion</button>
+        </div>
     </nav>
     <div class="cards-container">
         <div class="card" style="width: 18rem;">
