@@ -103,7 +103,7 @@ INCLUDE ("conexion.php")
             <img src="image/futbol.png" class="card-img-top" alt="futbol">
                 <div class="card-body">
                     <h5 class="card-title">FUTBOL</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de futbol de lima.</p>
+                    <p class="card-text">En nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de futbol de lima.</p>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
                 </div>
         </div>
@@ -111,7 +111,7 @@ INCLUDE ("conexion.php")
             <img src="image/basket.png" class="card-img-top" alt="basket">
                 <div class="card-body">
                     <h5 class="card-title">BASKET</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de basket de lima.</p>
+                    <p class="card-text">En nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de basket de lima.</p>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
                 </div>
         </div>
@@ -119,7 +119,7 @@ INCLUDE ("conexion.php")
             <img src="image/voley.png" class="card-img-top" alt="voley">
                 <div class="card-body">
                     <h5 class="card-title">VOLEY</h5>
-                    <p class="card-text">en nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de voley de lima.</p>
+                    <p class="card-text">En nuestra academia podras demostrar tus habilidades con el balon y pertenecer al mas grande equipo de voley de lima.</p>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">INSCRIBIRSE</button>
                 </div>
         </div>
