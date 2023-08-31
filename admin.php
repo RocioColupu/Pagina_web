@@ -15,7 +15,7 @@
 <body>
 
     <!-- FORMULARIO DE INICIO DE SESION -->
-    <form method="POST" action="">
+    <form action="Crud.php" method="POST" >
         <div class="col-4 m-5 justify-content-center">
             <div class="login">
                 <div class="image">
