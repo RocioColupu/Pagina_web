@@ -12,28 +12,28 @@
     <div class="container">
     <form action="Insertar.php" method="POST"> 
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+        <input type="text" class="form-control" placeholder="Nombre" name="nombre" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+        <input type="text" class="form-control" placeholder="Apellido" name="apellido" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="DNI" name="dni">
+        <input type="text" class="form-control" placeholder="DNI" name="dni" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Telefono" name="telefono">
+        <input type="text" class="form-control" placeholder="Telefono" name="telefono" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Usuario" name="usuario">
+        <input type="text" class="form-control" placeholder="Usuario" name="usuario" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Contraseña" name="contraseña">
+        <input type="text" class="form-control" placeholder="Contraseña" name="contraseña" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Fecha de Nacimiento" name="fechanac">
+        <input type="text" class="form-control" placeholder="Fecha de Nacimiento" name="fechanac" >
       </div>
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Distrito" name="distrito">
+        <input type="text" class="form-control" placeholder="Distrito" name="distrito" >
       </div>
       <div class="container text-center">
         <button type="submit" class="btn btn-primary">Agregar ususario </button>

@@ -57,7 +57,7 @@ include("conexion.php");
                   <th>
                     <a href="Editardatos.php?Id=<?php echo $fila['ID'] ?>" class="btn btn-warning">Editar</a>
                   </th>
-                  <th> <a href="" class="btn btn-danger">Eliminar</a></th>
+                  <th> <a href="Eliminar.php?Id=<?php echo $fila['ID'] ?>" class="btn btn-danger">Eliminar</a></th>
                 </tr>
 
               <?php
