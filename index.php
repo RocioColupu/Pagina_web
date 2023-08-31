@@ -72,56 +72,56 @@
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="" name="Nombre">
                 <label for="floatingInputGroup1">Nombres:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="" name="Apellido">
                 <label for="floatingInputGroup1">Apellidos:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-file-person"></i></i></span>
               <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="number" class="form-control" id="floatingInputGroup1" placeholder="" name="dni">
                 <label for="floatingInputGroup1">DNI:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-phone"></i></i></i></span>
               <div class="form-floating">
-                <input type="numeric" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="numeric" class="form-control" id="floatingInputGroup1" placeholder="" name="Telefono">
                 <label for="floatingInputGroup1">Telefono:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-person-bounding-box"></i></i></i></i></span>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="" name="User">
                 <label for="floatingInputGroup1">User:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-hash"></i></i></i></i></span>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="" name="Clave">
                 <label for="floatingInputGroup1">Clave:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-calendar3"></i></i></i></i></span>
               <div class="form-floating">
-                <input type="date" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="date" class="form-control" id="floatingInputGroup1" placeholder="" name="Fechanac">
                 <label for="floatingInputGroup1">Fecha de Nacimiento:</label>
               </div>
             </div>
             <div class="input-group mb-3">
               <span class="input-group-text"><i class="bi bi-geo-alt"></i></i></i></i></span>
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="" name="Distrito">
                 <label for="floatingInputGroup1">Distrito:</label>
               </div>
             </div>
