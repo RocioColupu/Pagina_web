@@ -13,22 +13,25 @@
 </head>
 
 <body>
-  <form method="POST" action="validarUsuario.php">
+
+  <!-- FORMULARIO DE INICIO DE SESION -->
+  <form method="POST" action="validar.php">
     <div class="col-4 m-5 justify-content-center">
       <div class="login">
         <div class="image">
-          <img src="image/iconprincipal.png">
+          <a href="admin.php">
+          <img src="image/iconprincipal.png"> 
+          </a>
+          
         </div>
         <div>
           <H1>LOGIN</H1>
         </div>
       </div>
-
-
       <div class="input-group mb-4">
         <span class="input-group-text"><i class="bi bi-person"></i></span>
         <div class="form-floating">
-          <input type="text" name="usuario" class="form-control" id="floatingInputGroup1" placeholder="Username">
+          <input type="text" name="usuario" class="form-control" id="floatingInputGroup1" placeholder="Usuario">
           <label for="usuario">Usuario: </label>
         </div>
       </div>
@@ -36,24 +39,112 @@
       <div class="input-group mb-4">
         <span class="input-group-text">#</span>
         <div class="form-floating">
-          <input type="password"  name="password" class="form-control" id="floatingInputGroup1" placeholder="Username">
+          <input type="password" name="password" class="form-control" id="floatingInputGroup1" placeholder="">
           <label for="password">Password: </label>
         </div>
       </div>
       <div class="botones">
-        <button type="submit" class="btn btn-primary btn-lg"> Iniciar sesion </button>
-        <button type="button" class="btn btn-secondary btn-lg">Registrarse</button>
+        <button type="submit" class="btn btn-primary btn-lg" name="login"> Iniciar sesion </button>
+        <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrarse</button>
 
       </div>
-      
-    </div>
 
+    </div>
   </form>
 
+  <!-- MODAL DE REGISTRO -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">REGISTRARSE</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="validar.php">
+            <div class="justify-content-center">
+              <div class="login">
+                <img src="image/iconprincipal.png">
+              </div>
+            </div>
 
+
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Nombres:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Apellidos:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-file-person"></i></i></span>
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">DNI:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-phone"></i></i></i></span>
+              <div class="form-floating">
+                <input type="numeric" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Telefono:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-person-bounding-box"></i></i></i></i></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">User:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-hash"></i></i></i></i></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Clave:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-calendar3"></i></i></i></i></span>
+              <div class="form-floating">
+                <input type="date" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Fecha de Nacimiento:</label>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="bi bi-geo-alt"></i></i></i></i></span>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="">
+                <label for="floatingInputGroup1">Distrito:</label>
+              </div>
+            </div>
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+
+            </div>
+
+
+
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 
