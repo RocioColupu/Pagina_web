@@ -68,6 +68,7 @@ INCLUDE ("conexion.php")
         }
 
         .cards-container {
+            margin-top: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,19 +104,19 @@ INCLUDE ("conexion.php")
         <div class="card" style="width: 18rem;">
             <img src="image/profesor-futbol.png" class="card-img-top" alt="profesor de futbol">
             <div class="card-body">
-                <p class="card-text">cuto guadalupe nuestro reconocido ex jugador de la seleccion peruana de futbol te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+                <p class="card-text">Cuto guadalupe nuestro reconocido ex jugador de la seleccion peruana de futbol te guiara a potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="image/profesor-basket.png" class="card-img-top" alt="profesor de basket">
             <div class="card-body">
-                <p class="card-text">michale jordan reconocido ex jugador de la nba y varias veces campeon te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+                <p class="card-text">Michale jordan reconocido ex jugador de la nba y varias veces campeon te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="image/profesor-voley.png" class="card-img-top" alt="profesora de voley">
             <div class="card-body">
-                <p class="card-text">natalia malaga nuestra reconocido ex entrenadora de la seleccion  de voley te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
+                <p class="card-text">Natalia malaga nuestra reconocido ex entrenadora de la seleccion  de voley te guiara para potenciar tus habilidades y llevar a nuestro equipo a la victoria.</p>
             </div>
         </div>
     </div>

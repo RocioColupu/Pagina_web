@@ -68,6 +68,7 @@ INCLUDE ("conexion.php")
         }
 
         .carousel-item{
+            margin-top: 100px;
             width: 500px; 
             height: auto; 
         }

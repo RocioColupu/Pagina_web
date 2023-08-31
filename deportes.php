@@ -125,6 +125,7 @@ INCLUDE ("conexion.php")
         </div>
     </div>
 <!-- Modal -->
+<form action = "solicitud.php" method = "POST" >
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -134,34 +135,39 @@ INCLUDE ("conexion.php")
       </div>
       <div class="modal-body">
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="10145475">
-            <label for="floatingInput">ID SOLICITUD</label>
+            <input type="text" class="form-control" name="idSolicitud" id="idSolicitud" placeholder="digita id de solicitud">
+            <label for="IdSolicitud">ID SOLICITUD</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="lucas23">
-            <label for="floatingPassword">USUARIO</label>
+            <input type="text" class="form-control" name="nombreUser" id="nombreUser" placeholder="digita id de usuario">
+            <label for="nombreUser">NOMBRE</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="date" class="form-control" id="floatingPassword" placeholder="19/07/2004">
-            <label for="floatingPassword">FECHA DE NACIMIENTO</label>
-        </div>
-        <div class="form-floating">
-            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <select class="form-select" name="Deporte" id="Deporte" aria-label="Floating label select example">
                 <option selected>selecciona un deporte</option>
-                <option value="1">futbol</option>
-                <option value="2">basket</option>
-                <option value="3">voley</option>
+                <option value="futbol">futbol</option>
+                <option value="basket">basket</option>
+                <option value="voley">voley</option>
             </select>
-            <label for="floatingSelect">DEPORTES</label>
+            <label for="Deporte">DEPORTES</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="Telefono" id="Telefono" placeholder="digita numero de telefono">
+            <label for="Telefono">TELEFONO</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" name="DNI" id="DNI" placeholder="digita el dni">
+            <label for="DNI">DNI</label>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CERRAR</button>
-        <button type="button" class="btn btn-primary">INSCRIBIRSE</button>
+        <button type="submit" class="btn btn-primary">INSCRIBIRSE</button>
       </div>
     </div>
   </div>
 </div>
+</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
