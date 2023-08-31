@@ -23,23 +23,19 @@ include("conexion.php");
       </li>
     </ul>
     <br>
-    <div class="container">
+    <!-- <div class="container">
       <a href="AgregarUsuario.php" class="btn btn-danger">Agregar usuario</a>
-    </div>
+    </div> -->
     <br>
-    <div class="container">
+    <div class="container" >
         <table class="table table-bordered table-striped">
           <thead class="table-dark">
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellido</th>
-              <th scope="col">DNI</th>
+              <th scope="col">ID-Solicitud</th>
+              <th scope="col">Nombre-Usuario</th>
+              <th scope="col">Deporte</th>
               <th scope="col">Telefono</th>
-              <th scope="col">Usuario</th>
-              <th scope="col">Contraseña</th>
-              <th scope="col">Fecha de Nacimiento</th>
-              <th scope="col">Distrito</th>
+              <th scope="col">DNI</th>
               <th></th>
               <th></th>
             </tr>
@@ -48,25 +44,21 @@ include("conexion.php");
               <?php
               include("conexion.php");
 
-              $sql = "SELECT * FROM usuario";
+              $sql = "SELECT * FROM solicitud";
               $query = mysqli_query($conexion,$sql);
 
               while($fila = mysqli_fetch_array($query)){
               ?>
                 <tr>
-                  <th scope="row"><?php echo $fila['ID'] ?></th>
-                  <th scope="row"><?php echo $fila['Nombre'] ?></th>
-                  <th scope="row"><?php echo $fila['Apellido'] ?></th>
-                  <th scope="row"><?php echo $fila['DNI'] ?></th>
+                  <th scope="row"><?php echo $fila['idSolicitud'] ?></th>
+                  <th scope="row"><?php echo $fila['nombreUser'] ?></th>
+                  <th scope="row"><?php echo $fila['Deporte'] ?></th>
                   <th scope="row"><?php echo $fila['Telefono'] ?></th>
-                  <th scope="row"><?php echo $fila['User'] ?></th>
-                  <th scope="row"><?php echo $fila['Clave'] ?></th>
-                  <th scope="row"><?php echo $fila['FechaNac'] ?></th>
-                  <th scope="row"><?php echo $fila['Distrito'] ?></th>
+                  <th scope="row"><?php echo $fila['DNI'] ?></th>
                   <th>
-                    <a href="Editardatos.php?Id=<?php echo $fila['ID'] ?>" class="btn btn-warning">Editar</a>
+                    <a href="Editar-Solicitud.php?Id=<?php echo $fila['idSolicitud'] ?>" class="btn btn-warning">Editar</a>
                   </th>
-                  <th> <a href="Eliminar.php?Id=<?php echo $fila['ID'] ?>" class="btn btn-danger">Eliminar</a></th>
+                  <th> <a href="Eliminar-Solicitud.php?Id=<?php echo $fila['idSolicitud'] ?>" class="btn btn-danger">Eliminar</a></th>
                 </tr>
 
               <?php

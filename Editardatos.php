@@ -13,15 +13,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Editar Cliente</title>
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
   <body>
-    <h1 class="bg-warning p-2 text-black text-center">Editar Cliente</h1>
+    <h1 class="bg-warning p-2 text-white text-center">Editar Usuario</h1>
     <br>
     <div class="container">
     <form action="Editar.php" method="POST"> 
-        <input type="Hidden" name="Id" value="<?php echo $fila['ID']?>">
+        <input  type="Hidden" name="Id" value="<?php echo $fila['ID']?>">
       <div class="mb-3">
         <label class="form-label">Nombre</label>
         <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="<?php echo $fila['Nombre'];?>">
