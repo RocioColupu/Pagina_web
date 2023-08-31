@@ -80,6 +80,7 @@ if (!isset($_SESSION['usuario'])) {
 
         .salir {
             right: right;
+            text-decoration: none;
         }
 
         .main-menu_link {
@@ -134,7 +135,7 @@ if (!isset($_SESSION['usuario'])) {
         </ul>
 
         <div class="salir">
-            <button type="button" class="btn btn-danger">Cerrar Sesion</button>
+           <a href=""> <button type="button" class="btn btn-danger">Cerrar Sesion </button> </a>
         </div>
     </nav>
     <div class="cards-container">

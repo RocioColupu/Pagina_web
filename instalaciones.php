@@ -136,9 +136,10 @@ if (!isset($_SESSION['usuario'])) {
                 <a href="http://localhost/Pagina_web/instalaciones.php" class="main-menu_link">INSTALACIONES</a>
             </li>
         </ul>
+        <a href="">
         <div class="salir">
             <button type="button" class="btn btn-danger">Cerrar Sesion</button>
-        </div>
+        </div></a>
     </nav>
     <div class="carousel-container">
         <div id="carouselExample" class="carousel slide">
